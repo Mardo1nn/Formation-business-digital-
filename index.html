@@ -2100,3 +2100,47 @@
     </script>
 </body>
 </html>
+
+<style>
+  .floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: slideIn 0.5s ease forwards;
+  }
+
+  .floating-button:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    .floating-button {
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+</style>
+
+<button class="floating-button" onclick="window.location.href='https://formation-business-digital-01.similienmardoche6.workers.dev/'">
+  🔐 Connexion – 🎤 Art Oratoire
+</button>
