@@ -2107,28 +2107,34 @@
     bottom: 30px;
     right: 30px;
     z-index: 9999;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
+    color: #000;
     padding: 15px 25px;
     border: none;
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.4);
     transition: all 0.3s ease;
     animation: slideIn 0.5s ease forwards;
   }
 
   .floating-button:hover {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(135deg, #B8860B 0%, #FFD700 100%);
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(184, 134, 11, 0.6);
   }
 
   @keyframes slideIn {
-    from { opacity: 0; transform: translateY(100px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @media (max-width: 768px) {
@@ -2141,6 +2147,6 @@
   }
 </style>
 
-<button class="floating-button" onclick="window.location.href='https://formation-business-digital-01.similienmardoche6.workers.dev/'">
-  🔐 Connexion – 🎤 Art Oratoire
+<button class="floating-button" onclick="window.location.href='https://formation-business-digital-01.formation-06c.workers.dev/'">
+  🔐 Connexion Art Oratoire
 </button>
